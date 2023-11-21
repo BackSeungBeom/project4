@@ -52,6 +52,7 @@ h1 {
 <table id="list" width="90%">
 <tr>
 	<th>번호</th>
+	<th>카테고리</th>
 	<th>제목</th>
 	<th>작가</th>
 	<th>내용</th>
@@ -62,6 +63,7 @@ h1 {
 <c:forEach items="${list}" var="u">
 	<tr>
 		<td>${u.getSeq()}</td>
+		<td>${u.getCategory()}</td>
 		<td>${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>

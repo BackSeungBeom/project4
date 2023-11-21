@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class BoardVO {
     private int seq;
+    private String category;
     private String title;
     private String writer;
     private String content;
@@ -16,9 +17,9 @@ public class BoardVO {
     public void setSeq(int seq) {
         this.seq = seq;
     }
-    public String getTitle() {
-        return title;
-    }
+    public String getCategory() { return category; }
+    public void setCategory(String category) { this.category = category; }
+    public String getTitle() { return title; }
     public void setTitle(String title) {
         this.title = title;
     }
